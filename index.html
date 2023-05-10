@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./img/security.png" />
+</head>
+
+<body>
+  <header>
+    <a href="./index.html">
+      <img src="./img/Logo.png" class="logoHeader" alt="Logo Alura">
+    </a>
+  </header>
+
+  <table class="contenedor" cellpadding=15>
+    <tr>
+      <td>
+        <div>
+          <textarea name="txtInput" id="txtInput" placeholder="Ingrese el texto aquí" class="input" cols="50"
+            rows="15"></textarea>
+        </div>
+        <div class="centerButton">
+          <p class="alertNot"> &#x1f6c8; Solo letras minúsculas y sin acentos</p>
+          <button onclick="encriptarTxt()" class="fill02 button02">Encriptar</button>
+          <button onclick="desencriptarTxt()" class="fill01 button01">Desencriptar</button>
+        </div>
+      </td>
+      <td>
+        <div>
+          <textarea name=" txtOutput" id="txtOutput" cols="25" rows="15" class="output"></textarea>
+        </div>
+        <div class="centerText" name="smsText" id="smsText">
+          <h1>Ningún mensaje fue encontrado</h1>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="centerButton">
+          <button onclick="copiarTxt()" id="buttonCopy" name="buttonCopy" class="fill01 button01"
+            style="display:none">Copiar</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <footer>
+    <div class="contenedorRedesSociales">
+      <a href="https://www.instagram.com/santiago_reyes_11" target="-blank">
+        <img src="./img/instagram.png" class="iconoRedesSociales" alt="Logo instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/santiag0reyes" target="-blank">
+        <img src="./img/linkedin.png" class="iconoRedesSociales" alt="Logo linkedin">
+      </a>
+      <a href="https://github.com/ReyesSantiag0" target="-blank">
+        <img src="./img/github.png" class="iconoRedesSociales" alt="Logo github">
+      </a>
+    </div>
+    <div class="copyright">
+      <span>&copy;2023 Santiago Reyes. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./backend.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
